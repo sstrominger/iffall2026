@@ -1,0 +1,26 @@
+            body {
+                background-color: rgb(102, 235, 35);
+            }
+             p {
+                color: rgb(0, 0, 0); 
+                font-size: 20px;
+                font-family: "Times New Roman", sans-serif;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            } 
+            h1 {
+                font-size: 40px;
+                font-family: "Arial Black", Gadget, sans-serif;
+            }
+            h2 {
+                font-size: 35px;
+                font-family: "Arial Black", Gadget, sans-serif;
+                margin-top: 15px;
+                margin-bottom: 10px;
+            }
+            h3 {
+                font-size: 30px;
+                font-family: "Arial Black", Gadget, sans-serif;
+                margin-top: 15px;
+                margin-bottom: 10px;
+            }
