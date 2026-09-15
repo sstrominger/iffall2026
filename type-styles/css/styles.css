@@ -1,0 +1,88 @@
+body {
+    font-family: "Raleway", sans-serif;
+    margin: 60px;
+    background-color: #f7f7f7;
+    color: #222;
+}
+header {
+    margin-bottom: 50px;
+}
+h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+header p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+section {
+    margin-bottom: 45px;
+}
+h2 {
+    font-size: 22px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+.sample {
+    font-size: 20px;
+    margin: 14px 0;
+}
+.label {
+    display: inline-block;
+    width: 170px;
+    font-size: 14px;
+    color: #777;
+}
+.weight-light {
+    font-weight: 300;
+}
+
+.weight-normal {
+    font-weight: 400;
+}
+
+.weight-bold {
+    font-weight: 700;
+}
+
+.style-normal {
+    font-style: normal;
+}
+
+.style-italic {
+    font-style: italic;
+}
+.spacing-normal {
+    letter-spacing: normal;
+}
+.spacing-small {
+    letter-spacing: 0.1em;
+}
+.spacing-large {
+    letter-spacing: 0.3em;
+}
+.transform-none {
+    text-transform: none;
+}
+.transform-uppercase {
+    text-transform: uppercase;
+}
+.transform-lowercase {
+    text-transform: lowercase;
+}
+.transform-capitalize {
+    text-transform: capitalize;
+}
+.decoration-none {
+    text-decoration: none;
+}
+.decoration-underline {
+    text-decoration: underline;
+}
+.decoration-line-through {
+    text-decoration: line-through;
+}
+.decoration-overline {
+    text-decoration: overline;
+}
