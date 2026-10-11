@@ -1,67 +1,99 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<title>Basic Responsive Design Techniques</title>
-	<link href="https://wudesign.me/resources/responsive-design-techniques/styles.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
+<html lang="en">
 
-<body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>HTML Tracing Exercise</title>
+		<link rel="stylesheet" href="https://wudesign.me/resources/html_tracing_2024/css/starter_style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+	</head>
+	<body>
+        <header>
+            <div class="content-column">
+                <h1>Page Intro</h1>
+                <h2>Subheading that <i>really</i> engages the user.</h2>
+            </div>
+        </header>    
+        <section> 
+            <div class="content-column">
+                <h3>Section Title</h3>
 
-	<header>
-		<h1>Responsive Design Techniques</h1>
-		<p>For each section in this document, complete the challenge as described.</p>
-	</header>
+                <img src="images/image2.webp" alt="Bee on a flower"> 
 
-	<section id="body-width-management">
-		<p>Make the <code>&lt;body&gt;</code> of this document be <code>800px</code> wide <em>and</em> <code>90%</code> the width of the viewport, whichever is smaller. Center the body on the page no matter how wide the viewport is.</p>
-	</section>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan vitae massa quis euismod. Vivamus pulvinar posuere turpis congue laoreet. Suspendisse potenti. Sed fringilla, ex et dictum efficitur, augue nunc cursus elit, non lacinia diam ante et ipsum. Sed non commodo dolor. Sed vehicula aliquet nisl, sit amet convallis dolor posuere sed. Fusce consectetur quam diam, nec facilisis lectus congue non. Pellentesque sollicitudin mollis tempor. Vivamus mattis at quam a pretium. Aenean eget scelerisque mi, non rutrum felis. Maecenas facilisis imperdiet justo, ut sodales purus blandit vitae. Proin pellentesque laoreet lobortis. Sed feugiat ipsum eget lorem tempus commodo.</p>
 
-	<section id="background-color">
-		<p>Make the <code>background-color</code> of this document to <code>#eaf6ff</code> when the viewport width is <code>640px</code> or more.</p>
-	</section>
+                <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur lobortis, nisi pretium hendrerit tincidunt, ante erat tempor purus, id condimentum purus dolor ac urna. Nullam imperdiet, ipsum vitae posuere euismod, justo elit auctor augue, at molestie est nulla ut lorem. Nam eu aliquam ipsum, a pretium enim. Nulla non consectetur tortor, ac placerat turpis. Nam lobortis libero sed varius pellentesque. In dapibus arcu ut mauris accumsan, in tincidunt risus eleifend. Cras ut nulla vel eros iaculis rutrum eget sed felis.</p>
 
-	<section id="headline-size">
-		<p>Make the <code>&lt;h1&gt;</code> on this page have a <code>font-size</code> of <code>1.5rem</code> when the viewport width is below <code>500px</code>, and <code>2.5rem</code> when the viewport width is above <code>640px</code>.</p>
-	</section>
+                <p>Morbi et maximus ante, eu tincidunt ligula. Suspendisse elementum, leo quis sodales vehicula, velit enim hendrerit risus, vitae porttitor quam risus quis erat. Maecenas sed tellus et justo commodo tempor. Mauris augue nibh, varius nec faucibus sit amet, porttitor ut risus. Maecenas dapibus tellus felis, quis interdum magna lobortis at. Nam vel ornare turpis. Nulla facilisi. Morbi velit justo, vehicula vel tristique vitae, finibus sit amet eros. Quisque pellentesque erat quis enim vulputate posuere. Aliquam erat volutpat. Curabitur gravida mi at enim varius dignissim. Morbi vitae turpis ut ligula tincidunt varius eget ac lorem. Cras laoreet augue augue, non sodales libero elementum ultrices.</p> 
+            </div>
+            
+        </section>
+        <section> 
+            <div class="content-column">
+                <h3>Section Title</h3>
+                <div class="grid-container">  
+                    <!-- Image 1 -->
+                    <div class="grid">
+                        <img src="images/image3.jpg" alt="flower"> 
+                        <h4>Photo Title</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan vitae massa quis euismod.</p>
+                    </div>  
 
-	<section id="fixed-size-grid-items">
-		<p>Turn the following list into a grid of boxes that wrap horizontally (side-by-side until they run out of room and wrap to the next line). Make each <code>&lt;aside&gt;</code> <code>170px</code> wide, with a <code>10px</code> margin. Set the <code>font-size</code> for the boxes to be <code>0.8rem</code>. Be sure to remove the bullets associated with the <code>&lt;li&gt;</code> tags, and remove the default <code>padding-left</code> on the <code>&lt;ul&gt;</code>.</p>
-		<ul>
-			<li>
-				<aside>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</aside>
-			</li>
-			<li>
-				<aside>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</aside>
-			</li>
-			<li>
-				<aside>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ullamco laboris nisi ut aliquip ut labore et dolore magna aliqua.</aside>
-			</li>
-			<li>
-				<aside>Sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur consectetur adipisicing elit sint occaecat cupidatat non proident.</aside>
-			</li>
-		</ul>
-	</section>
+                    <!-- Image 2 -->
+                    <div class="grid">
+                        <img src="images/image4.webp" alt="leaves">
+                        <h4>Photo Title</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan vitae massa quis euismod.</p>
+                    </div>
 
-	<section id="stretchable-grid-items">
-		<p>As above, make a grid of boxes that wrap horizontally. This time, give each <code>&lt;li&gt;</code> a width of 100%. When the viewport width is greater than 480px, make each <code>&lt;li&gt;</code> be <code>50%</code> wide. If the viewport is greater than 640px, make each <code>&lt;li&gt;</code> be <code>25%</code> wide. The grid should be 1-across at small widths, 2-across at medium widths, and 4-across and large widths. Don't set a width on the <code>&lt;aside&gt;</code> elements, but be sure they have a <code>10px</code> margin.</p>
-		<p>Now, set the <code>&lt;ul&gt;</code> to have a <code>margin</code> of <code>-10px</code> left and right, <code>1rem</code> top and bottom. What happens?</p>
-		<ul>
-			<li>
-				<aside>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</aside>
-			</li>
-			<li>
-				<aside>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</aside>
-			</li>
-			<li>
-				<aside>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ullamco laboris nisi ut aliquip ut labore et dolore magna aliqua.</aside>
-			</li>
-			<li>
-				<aside>Sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur consectetur adipisicing elit sint occaecat cupidatat non proident.</aside>
-			</li>
-		</ul>
-	</section>
+                    <!-- Image 3-->
+                    <div class="grid">
+                        <img src="images/image5.jpg" alt="skyline">
+                        <h4>Photo Title</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan vitae massa quis euismod.</p>
+                    </div>
 
-</body>
+                    <!-- Image 4 -->
+                    <div class="grid">          
+                        <img src="images/image6.jpg" alt="stairs">
+                        <h4>Photo Title</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan vitae massa quis euismod.</p>
+                    </div>
+
+                    <!-- Image 5 -->
+                    <div class="grid">
+                        <img src="images/image7.jpg" alt="flower">
+                        <h4>Photo Title</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan vitae massa quis euismod.</p>
+                    </div>
+
+                    <!-- Image 6 -->
+                    <div class="grid">
+                        <img src="images/image8.jpg" alt="car">
+                        <h4>Photo Title</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan vitae massa quis euismod.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section> 
+            <div class="content-column"> 
+                <h3>Section Title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan vitae massa quis euismod. Vivamus pulvinar posuere turpis congue laoreet. Suspendisse potenti. Sed fringilla, ex et dictum efficitur, augue nunc cursus elit, non lacinia diam ante et ipsum. Sed non commodo dolor. Sed vehicula aliquet nisl, sit amet convallis dolor posuere sed.</p>
+
+            </div>
+        </section>
+        <footer> 
+            <div class="content-column">
+                 <p>&copy; Copyright 2024.</p>
+            </div>
+        </footer>
+
+
+	</body>
+
 </html>
