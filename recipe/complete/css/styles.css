@@ -1,0 +1,654 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f7f0e5;
+    color: #392f29;
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 17px;
+    line-height: 1.5;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+a {
+    color: #803c42;
+    text-underline-offset: 4px;
+}
+a:hover {
+    color: #69704a;
+}
+
+.recipe-page {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 70px 30px 100px;
+    isolation: isolate;
+    overflow: clip;
+}
+.recipe-content {
+    grid-column: 1;
+    grid-row: 1;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 560px;
+    min-width: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1,
+h2 {
+    font-family: 'Italianno', cursive;
+    font-weight: 400;
+    color: #803c42;
+    text-align: center;
+}
+h1 {
+    font-size: 68px;
+    line-height: 1;
+
+    margin: 0 0 25px;
+}
+h2 {
+    font-size: 46px;
+    line-height: 1.1;
+
+    margin: 0 0 20px;
+}
+h3 {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 1.3;
+    color: #803c42;
+    text-align: center;
+    margin: 0 0 10px;
+}
+h4 {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #803c42;
+    text-align: center;
+    margin: 0 0 12px;
+}
+p {
+    font-size: 17px;
+    line-height: 1.5;
+    margin: 0 0 14px;
+    text-align: center;
+}
+.recipe-intro {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.description {
+    width: 100%;
+    max-width: 460px;
+
+    font-size: 17px;
+    line-height: 1.5;
+
+    margin: 0 auto;
+}
+.recipe-info {
+    margin-bottom: 50px;
+    text-align: center;
+}
+.recipe-info ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 18px;
+    gap: 10px 22px;
+}
+.recipe-info li {
+    font-size: 16px;
+    line-height: 1.4;
+}
+.recipe-info strong {
+    color: #803c42;
+    font-weight: 600;
+}
+.timing-note {
+    max-width: 450px;
+    font-size: 15px;
+    font-style: italic;
+    line-height: 1.5;
+    margin: 0 auto;
+}
+.ingredients,
+.equipment,
+.instructions,
+.sauce,
+.recipe-notes {
+    margin-bottom: 60px;
+}
+.ingredients h3 {
+    margin-top: 25px;
+}
+.ingredients h3:first-of-type {
+    margin-top: 0;
+}
+.ingredients ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+    text-align: center;
+}
+.ingredients li {
+    font-size: 17px;
+    line-height: 1.4;
+    padding: 0;
+    margin-bottom: 10px;
+}
+.equipment ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.equipment li {
+    font-size: 17px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+.instructions,
+.sauce {
+    text-align: center;
+}
+.recipe-step {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 32px;
+    text-align: center;
+}
+.recipe-step h3 {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 21px;
+    font-weight: 600;
+    color: #803c42;
+    margin: 0 0 12px;
+    text-align: center;
+}
+.recipe-step p {
+    width: 100%;
+    max-width: 475px;
+    margin: 0 auto 12px;
+    font-size: 17px;
+    line-height: 1.5;
+    text-align: center;
+}
+.doneness-guide {
+    margin: 25px auto;
+    padding: 0;
+    border: none;
+    text-align: center;
+}
+.doneness-guide h4 {
+    font-size: 19px;
+    margin-bottom: 14px;
+}
+.doneness-guide ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.doneness-guide li {
+    font-size: 16px;
+    line-height: 1.45;
+    margin-bottom: 8px;
+}
+.recipe-step .tip {
+    font-size: 15px;
+    font-style: italic;
+    color: #695646;
+
+    margin-top: 20px;
+}
+
+.recipe-notes ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.recipe-notes li {
+    font-size: 17px;
+    line-height: 1.5;
+    margin-bottom: 14px;
+}
+.site-footer {
+    padding: 35px 20px 50px;
+    text-align: center;
+}
+.site-footer p {
+    font-family: 'Italianno', cursive;
+    font-size: 35px;
+    color: #803c42;
+    margin: 0;
+}
+.illustrations {
+    grid-column: 1;
+    grid-row: 1;
+    position: relative;
+    align-self: stretch;
+    z-index: 1;
+    min-width: 0;
+    pointer-events: none;
+}
+.illustrations .art {
+    position: absolute;
+    display: block;
+    width: 90px;
+    height: auto;
+    max-width: none;
+    pointer-events: none;
+}
+
+.illustrations .tomato {
+    width: 90px;
+    top: 92px;
+    left: max(12px, calc(50% - 430px));
+    transform: rotate(-18deg);
+}
+
+.illustrations .rosemary {
+    width: 95px;
+    top: 165px;
+    right: max(12px, calc(50% - 430px));
+    transform: rotate(24deg);
+}
+
+.illustrations .garlic {
+    width: 75px;
+    top: 381px;
+    left: max(12px, calc(50% - 420px));
+    transform: rotate(-12deg);
+}
+
+.illustrations .butter {
+    width: 95px;
+    top: 611px;
+    right: max(12px, calc(50% - 448px));
+    transform: rotate(10deg);
+}
+
+.illustrations .wine {
+    width: 55px;
+    top: 682px;
+    left: max(12px, calc(50% - 420px));
+    transform: rotate(-9deg);
+}
+
+.illustrations .steak {
+    width: 120px;
+    top: 1045px;
+    right: max(12px, calc(50% - 435px));
+    transform: rotate(12deg);
+}
+
+.illustrations .skillet {
+    width: 115px;
+    top: 1573px;
+    left: max(12px, calc(50% - 473px));
+    transform: rotate(-18deg);
+}
+
+.illustrations .olive-oil {
+    width: 75px;
+    top: 1546px;
+    right: max(12px, calc(50% - 420px));
+    transform: rotate(-20deg);
+}
+
+.illustrations .leaves-1 {
+    width: 80px;
+    top: 245px;
+    left: max(12px, calc(50% - 493px));
+    transform: rotate(35deg);
+}
+
+.illustrations .leaves-2 {
+    width: 75px;
+    top: 755px;
+    right: max(12px, calc(50% - 485px));
+    transform: rotate(-28deg);
+}
+
+.illustrations .leaves-3 {
+    width: 85px;
+    top: 1873px;
+    left: max(12px, calc(50% - 420px));
+    transform: rotate(35deg);
+}
+
+.illustrations .leaves-4 {
+    width: 90px;
+    top: 2253px;
+    right: max(12px, calc(50% - 450px));
+    transform: rotate(-20deg);
+}
+
+.illustrations .capers {
+    width: 70px;
+    top: 972px;
+    left: max(12px, calc(50% - 470px));
+    transform: rotate(12deg);
+}
+
+.illustrations .lemon {
+    width: 85px;
+    top: 2087px;
+    right: max(12px, calc(50% - 420px));
+    transform: rotate(-15deg);
+}
+
+.illustrations .olives {
+    width: 90px;
+    top: 2317px;
+    left: max(12px, calc(50% - 453px));
+    transform: rotate(15deg);
+}
+
+.illustrations .plate {
+    width: 115px;
+    top: 2686px;
+    right: max(12px, calc(50% - 473px));
+    transform: rotate(-8deg);
+}
+
+.illustrations .salt-pepper {
+    width: 75px;
+    top: 1503px;
+    right: max(12px, calc(50% - 475px));
+    transform: rotate(20deg);
+}
+
+.illustrations .sauce-art {
+    width: 95px;
+    top: 2773px;
+    left: max(12px, calc(50% - 420px));
+    transform: rotate(12deg);
+}
+
+.illustrations .shallot-whole {
+    width: 85px;
+    top: 2988px;
+    right: max(12px, calc(50% - 457px));
+    transform: rotate(-15deg);
+}
+
+.illustrations .shallot-half {
+    width: 75px;
+    top: 3220px;
+    left: max(12px, calc(50% - 420px));
+    transform: rotate(22deg);
+}
+
+.illustrations .thyme {
+    width: 90px;
+    top: 3431px;
+    right: max(12px, calc(50% - 423px));
+    transform: rotate(35deg);
+}
+
+.illustrations .tomatoes-on-vine {
+    width: 110px;
+    top: 3663px;
+    left: max(12px, calc(50% - 483px));
+    transform: rotate(-12deg);
+}
+.illustrations .tomato-mirror {
+    width: 86px;
+    top: 318px;
+    right: max(12px, calc(50% - 420px));
+    transform: rotate(-15deg);
+}
+
+.illustrations .rosemary-mirror {
+    width: 84px;
+    top: 538px;
+    left: max(12px, calc(50% - 468px));
+    transform: rotate(-18deg);
+}
+
+.illustrations .garlic-mirror {
+    width: 68px;
+    top: 905px;
+    right: max(12px, calc(50% - 482px));
+    transform: rotate(16deg);
+}
+
+.illustrations .butter-mirror {
+    width: 78px;
+    top: 1140px;
+    left: max(12px, calc(50% - 420px));
+    transform: rotate(-17deg);
+}
+
+.illustrations .wine-mirror {
+    width: 50px;
+    top: 1346px;
+    right: max(12px, calc(50% - 478px));
+    transform: rotate(12deg);
+}
+
+.illustrations .steak-mirror {
+    width: 98px;
+    top: 1724px;
+    left: max(12px, calc(50% - 460px));
+    transform: rotate(-12deg);
+}
+
+.illustrations .skillet-mirror {
+    width: 92px;
+    top: 1946px;
+    right: max(12px, calc(50% - 447px));
+    transform: rotate(18deg);
+}
+
+.illustrations .olive-oil-mirror {
+    width: 68px;
+    top: 2110px;
+    left: max(12px, calc(50% - 465px));
+    transform: rotate(-19deg);
+}
+
+.illustrations .leaves-1-mirror {
+    width: 73px;
+    top: 454px;
+    right: max(12px, calc(50% - 440px));
+    transform: rotate(-34deg);
+}
+
+.illustrations .leaves-2-mirror {
+    width: 68px;
+    top: 1430px;
+    left: max(12px, calc(50% - 445px));
+    transform: rotate(26deg);
+}
+
+.illustrations .leaves-3-mirror {
+    width: 72px;
+    top: 2546px;
+    right: max(12px, calc(50% - 460px));
+    transform: rotate(-19deg);
+}
+
+.illustrations .leaves-4-mirror {
+    width: 75px;
+    top: 2613px;
+    left: max(12px, calc(50% - 448px));
+    transform: rotate(25deg);
+}
+
+.illustrations .capers-mirror {
+    width: 57px;
+    top: 1797px;
+    right: max(12px, calc(50% - 445px));
+    transform: rotate(-8deg);
+}
+
+.illustrations .lemon-mirror {
+    width: 72px;
+    top: 3065px;
+    left: max(12px, calc(50% - 430px));
+    transform: rotate(19deg);
+}
+
+.illustrations .olives-mirror {
+    width: 82px;
+    top: 3138px;
+    right: max(12px, calc(50% - 460px));
+    transform: rotate(-19deg);
+}
+
+.illustrations .plate-mirror {
+    width: 97px;
+    top: 3216px;
+    left: max(12px, calc(50% - 425px));
+    transform: rotate(15deg);
+}
+
+.illustrations .salt-pepper-mirror {
+    width: 64px;
+    top: 832px;
+    left: max(12px, calc(50% - 480px));
+    transform: rotate(-16deg);
+}
+.illustrations .sauce-art-mirror {
+    width: 80px;
+    top: 3500px;
+    right: max(12px, calc(106% - 430px));
+    transform: rotate(-18deg);
+}
+
+.illustrations .shallot-whole-mirror {
+    width: 73px;
+    top: 3358px;
+    left: max(12px, calc(56% - 483px));
+    transform: rotate(18deg);
+}
+
+.illustrations .shallot-half-mirror {
+    width: 69px;
+    top: 3736px;
+    right: max(12px, calc(50% - 438px));
+    transform: rotate(-26deg);
+}
+
+.illustrations .thyme-mirror {
+    width: 80px;
+    top: 2915px;
+    left: max(12px, calc(50% - 472px));
+    transform: rotate(-27deg);
+}
+
+
+.illustrations .scatter-1 {
+    width: 115px;
+    top: 1213px;
+    right: max(12px, calc(50% - 465px));
+    transform: rotate(-25deg);
+}
+
+.illustrations .scatter-2 {
+    width: 76px;
+    top: 1273px;
+    left: max(12px, calc(50% - 458px));
+    transform: rotate(23deg);
+}
+
+.illustrations .scatter-3 {
+    width: 77px;
+    top: 2014px;
+    left: max(12px, calc(50% - 450px));
+    transform: rotate(-13deg);
+}
+
+.illustrations .scatter-4 {
+    width: 50px;
+    top: 2390px;
+    right: max(12px, calc(50% - 468px));
+    transform: rotate(14deg);
+}
+
+.illustrations .scatter-5 {
+    width: 83px;
+    top: 2473px;
+    left: max(12px, calc(50% - 460px));
+    transform: rotate(-30deg);
+}
+
+.illustrations .scatter-6 {
+    width: 62px;
+    top: 2846px;
+    right: max(12px, calc(50% - 435px));
+    transform: rotate(13deg);
+}
+
+.illustrations .scatter-7 {
+    width: 77px;
+    top: 3293px;
+    right: max(12px, calc(50% - 470px));
+    transform: rotate(-16deg);
+}
+
+.illustrations .scatter-8 {
+    width: 95px;
+    top: 3813px;
+    left: max(12px, calc(50% - 435px));
+    transform: rotate(17deg);
+}
+
+@media (max-width: 980px) {
+    .recipe-page {
+        padding: 55px 24px 80px;
+    }
+    .recipe-content {
+        width: 100%;
+        max-width: 560px;
+        min-width: 0;
+    }
+    .illustrations { display: none; }
+}
+
+@media (max-width: 760px) {
+    .recipe-page { padding: 48px 24px 70px; }
+    h1 { font-size: clamp(43px, 8vw, 58px); }
+    h2 { font-size: clamp(36px, 7vw, 44px); }
+    h3 { font-size: 19px; }
+    .recipe-intro { margin-bottom: 40px; }
+    .recipe-info { margin-bottom: 45px; }
+    .ingredients, .equipment, .instructions, .sauce, .recipe-notes {
+        margin-bottom: 50px;
+    }
+    .recipe-step { margin-bottom: 26px; }
+}
+
+@media (max-width: 500px) {
+    .recipe-page { padding: 38px 18px 60px; }
+    .description, .recipe-step p { font-size: 16px; }
+    .recipe-info ul { gap: 8px 14px; }
+    .site-footer p { font-size: 30px; }
+}
+
+html, body { max-width: 100%; }
+.recipe-content, .recipe-content > * { min-width: 0; }
+.recipe-content p, .recipe-content li { overflow-wrap: break-word; }
