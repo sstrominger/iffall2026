@@ -1,0 +1,232 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4eee7;
+    color: #2b2523;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+header,
+main {
+    width: 85%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+header {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #b9aaa0;
+}
+
+header p:first-child {
+    margin-bottom: 10px;
+    color: #7a2942;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #681f36;
+    font-size: 52px;
+    line-height: 1.1;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #681f36;
+    font-size: 32px;
+}
+
+h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #3b302c;
+    font-size: 23px;
+}
+
+h4 {
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-size: 17px;
+}
+
+.subtitle {
+    max-width: 750px;
+    font-size: 18px;
+    color: #5c504b;
+}
+
+section {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    border-bottom: 1px solid #cbbdb2;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+a {
+    color: #7a2942;
+}
+
+a:hover {
+    color: #3d101f;
+}
+
+ul,
+ol {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+
+
+.recipe-info {
+    margin: 25px 0;
+    padding: 20px;
+    background-color: #fffaf5;
+    border: 1px solid #d9ccc1;
+}
+
+.recipe-info p {
+    margin-bottom: 8px;
+}
+
+.recipe-info p:last-child {
+    margin-bottom: 0;
+}
+
+
+
+.recipe-columns {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+.recipe-columns > div {
+    width: 50%;
+}
+
+.recipe-columns > div:first-child {
+    padding: 25px;
+    background-color: #fffaf5;
+    border: 1px solid #d9ccc1;
+}
+
+
+
+.image-grid {
+    display: flex;
+    gap: 25px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.image-grid > div {
+    width: calc(50% - 13px);
+}
+
+.image-grid.three > div {
+    width: calc(33.333% - 17px);
+}
+
+.image-grid img {
+    display: block;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border: 1px solid #cbbdb2;
+}
+
+.image-grid p {
+    margin-top: 10px;
+    color: #5c504b;
+    font-size: 14px;
+}
+
+
+/* PEER EVALUATION */
+
+section:nth-of-type(6) h3 {
+    color: #7a2942;
+}
+
+section:nth-of-type(6) p {
+    max-width: 850px;
+}
+
+
+/* SOURCES */
+
+section:last-child ul {
+    list-style-type: square;
+}
+
+section:last-child li {
+    margin-bottom: 12px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 750px) {
+
+    header,
+    main {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .recipe-columns {
+        display: block;
+    }
+
+    .recipe-columns > div {
+        width: 100%;
+    }
+
+    .recipe-columns > div:first-child {
+        margin-bottom: 30px;
+    }
+
+    .image-grid {
+        display: block;
+    }
+
+    .image-grid > div,
+    .image-grid.three > div {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .image-grid img {
+        height: auto;
+    }
+}

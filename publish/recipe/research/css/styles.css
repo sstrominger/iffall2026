@@ -1,0 +1,127 @@
+ body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4efe8;
+            color: #2b2523;
+            line-height: 1.6;
+        }
+
+        header,
+        main,
+        footer {
+            width: 85%;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        header {
+            padding: 60px 0 35px;
+            border-bottom: 1px solid #bdaea2;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: Georgia, "Times New Roman", serif;
+        }
+
+        h1 {
+            margin: 0 0 10px;
+            font-size: 46px;
+            color: #641d32;
+        }
+
+        h2 {
+            margin-top: 55px;
+            color: #641d32;
+            font-size: 30px;
+        }
+
+        h3 {
+            margin-bottom: 6px;
+            font-size: 22px;
+        }
+
+        .subtitle {
+            max-width: 700px;
+            font-size: 18px;
+        }
+
+        .recipe-info {
+            margin: 25px 0;
+            padding: 18px 22px;
+            background-color: #fffaf4;
+            border-left: 5px solid #641d32;
+        }
+
+        .recipe-columns {
+            display: flex;
+            gap: 50px;
+            align-items: flex-start;
+        }
+
+        .recipe-columns > div {
+            flex: 1;
+        }
+
+        ul,
+        ol {
+            padding-left: 24px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .image-grid {
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        figure {
+            flex: 1 1 350px;
+            margin: 0;
+        }
+
+        figure img {
+            width: 100%;
+            display: block;
+            border: 1px solid #cbbdb2;
+        }
+
+        figcaption {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #6d625d;
+        }
+
+        .reference {
+            margin-bottom: 30px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #d7ccc3;
+        }
+
+        a {
+            color: #8b2947;
+        }
+
+        a:hover {
+            color: #3f101f;
+        }
+
+        footer {
+            padding: 45px 0 60px;
+            color: #6d625d;
+            font-size: 14px;
+        }
+
+        @media (max-width: 700px) {
+            .recipe-columns {
+                display: block;
+            }
+
+            h1 {
+                font-size: 36px;
+            }
+        }
